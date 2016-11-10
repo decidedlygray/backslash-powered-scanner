@@ -9,4 +9,8 @@ The code can be found at https://github.com/portswigger/backslash-powered-scanne
 This extension requires Burp Suite Pro 1.7.10 or later. To install it, simply use the BApps tab in Burp.
 
 If you want to manually build/install it from source, you'll need to add the following JAR to your libraries: https://commons.apache.org/proper/commons-lang/download_lang.cgi
+
 This dependency will be removed shortly.
+
+# Local Build Instructions (Windows only)
+A Windows PowerShell build script is located in `build\build.ps1`. It will handle downloading the commons-lang dependency, compiling source code, and JAR'ing up the results so they are ready for import to Burp Pro.
